@@ -5,7 +5,7 @@ import java.io.PrintWriter
 
 case class File(final val path: String) extends io[File] {
   private var content: String = ""
-  
+
   override def read(): File = {
     val source = scala.io.Source.fromFile(path)
     val content = source.mkString
@@ -15,9 +15,12 @@ case class File(final val path: String) extends io[File] {
   }
 
   override def write(content: String): Unit = {
-    new PrintWriter(path) { write(content); close() }
+    new PrintWriter(path) {
+      write(content); close()
+    }
   }
 
   override def get(): String = content
+
   override def toList(): List[String] = content.split("\\n").map(_.trim).toList
 }

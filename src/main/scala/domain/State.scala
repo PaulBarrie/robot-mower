@@ -5,6 +5,7 @@ case class State(var position: (Int, Int), var orientation: Orientation.Orientat
   def setPosition(position: (Int, Int)): Unit = {
     this.position = position
   }
+
   def setOrientation(orientation: Orientation.Orientation): Unit = {
     this.orientation = orientation
   }

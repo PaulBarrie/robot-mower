@@ -9,6 +9,7 @@ object Input {
       Input(size, inputList)
     }
   }
+
   case class InputItem(initState: State, instructions: List[Instruction])
 }
 

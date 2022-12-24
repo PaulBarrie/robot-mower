@@ -1,10 +1,8 @@
 package fr.esgi.mower
 package engine
 
-import domain.Input.{Input, InputItem}
-
-import fr.esgi.mower.domain.{Instruction, Orientation, State}
-import fr.esgi.mower.domain.Instruction.Instruction
+import domain.Input.InputItem
+import domain.{Instruction, Orientation, State}
 
 case class ArrivalComputer() extends Computer[InputItem, State] {
   override def compute(input: InputItem): State = {
@@ -24,7 +22,7 @@ case class ArrivalComputer() extends Computer[InputItem, State] {
         case Instruction.D => {
           state.orientation match {
             case Orientation.N => state.setOrientation(Orientation.E)
-            case Orientation.S => state.setOrientation(Orientation.O) 
+            case Orientation.S => state.setOrientation(Orientation.O)
             case Orientation.E => state.setOrientation(Orientation.S)
             case Orientation.O => state.setOrientation(Orientation.N)
           }

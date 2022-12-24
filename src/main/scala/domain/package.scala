@@ -5,12 +5,14 @@ package object domain {
     type Orientation = Value
     val N, E, S, O = Value
   }
+
   object Instruction extends Enumeration {
     type Instruction = Value
     val G, D, A = Value
   }
+
   object FileType extends Enumeration {
     type FileType = Value
-    val CSV, JSON = Value
+    val CSV, JSON, YAML = Value
   }
 }
