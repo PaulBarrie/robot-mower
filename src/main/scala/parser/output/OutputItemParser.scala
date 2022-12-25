@@ -10,7 +10,7 @@ abstract class OutputItemParser extends Parser[String, OutputItem] {}
 object OutputItemParser {
   case class JsonOutputItemParser() extends Parser[String, OutputItem] {
 
-    private final val stateParser = StateParser.JSONStateParser();
+    private final val stateParser = StateParser.JSONStateParser()
 
     override def marshall(input: String): Either[DonneesIncorrectesException, OutputItem] = ???
 
@@ -24,7 +24,7 @@ object OutputItemParser {
   }
 
   case class CSVOutputItemParser() extends Parser[String, OutputItem] {
-    final private val csvSeparator = ";";
+    final private val csvSeparator = ";"
 
     override def marshall(input: String): Either[DonneesIncorrectesException, OutputItem] = ???
 
@@ -34,7 +34,7 @@ object OutputItemParser {
   }
 
   case class YAMLOutputItemParser() extends Parser[String, OutputItem] {
-    private final val stateParser = StateParser.YAMLStateParser();
+    private final val stateParser = StateParser.YAMLStateParser()
 
     override def marshall(input: String): Either[DonneesIncorrectesException, OutputItem] = ???
 
