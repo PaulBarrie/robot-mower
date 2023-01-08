@@ -18,6 +18,5 @@ object Program {
     println("Mower on the way...");
     val engine: FileEngine = engineFactory.get(FileType.withName(outputFormat.toUpperCase())).asInstanceOf[FileEngine];
     engine.run((inputPath, outputPath));
-    println("The output file is available at: " + outputPath);
   }
 }

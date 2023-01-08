@@ -16,10 +16,9 @@ object InputParser {
       } else {
         val inputItems = input.tail.grouped(2).toList
         val inputItemsParsed = inputItems.map(inputItemParser.marshall)
-        if (inputItemsParsed.exists(_.isLeft)) {
-          Left(inputItemsParsed.find(_.isLeft).get.left.get)
-        } else {
-          Right(Input(
+        inputItemsParsed.find(_.isLeft) match {
+          case Some(e) => Left(DonneesIncorrectesException(inputItemsParsed.find(_.isLeft).get.left.get.message))
+          case None => Right(Input(
             parseMapSize(input.head),
             inputItemsParsed.map(_.right.get))
           )
