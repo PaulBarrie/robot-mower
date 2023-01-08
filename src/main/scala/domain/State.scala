@@ -1,12 +1,12 @@
 package fr.esgi.mower
 package domain
 
-case class State(var position: (Int, Int), var orientation: Orientation.Orientation) {
-  def setPosition(position: (Int, Int)): Unit = {
-    this.position = position
+case class State(position: (Int, Int), orientation: Orientation.Orientation) {
+  def setPosition(position: (Int, Int)): State = {
+    this.copy(position = position)
   }
 
-  def setOrientation(orientation: Orientation.Orientation): Unit = {
-    this.orientation = orientation
+  def setOrientation(orientation: Orientation.Orientation): State = {
+    this.copy(orientation = orientation)
   }
 }

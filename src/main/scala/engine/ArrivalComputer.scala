@@ -2,42 +2,47 @@ package fr.esgi.mower
 package engine
 
 import domain.Input.InputItem
+import domain.Instruction.Instruction
 import domain.{Instruction, Orientation, State}
+
+import scala.annotation.tailrec
 
 case class ArrivalComputer() extends Computer[InputItem, State] {
   override def compute(input: InputItem): State = {
     val state = input.initState.copy()
-    for (instruction <- input.instructions) {
-      instruction match {
-        case Instruction.A => {
-          val (x, y) = state.position
-          val orientation = state.orientation
-          orientation match {
-            case Orientation.N => state.setPosition((x, y + 1))
-            case Orientation.S => state.setPosition((x, y - 1))
-            case Orientation.E => state.setPosition((x + 1, y))
-            case Orientation.O => state.setPosition((x - 1, y))
-          }
-        }
-        case Instruction.D => {
-          state.orientation match {
-            case Orientation.N => state.setOrientation(Orientation.E)
-            case Orientation.S => state.setOrientation(Orientation.O)
-            case Orientation.E => state.setOrientation(Orientation.S)
-            case Orientation.O => state.setOrientation(Orientation.N)
-          }
-        }
-        case Instruction.G => {
-          state.orientation match {
-            case Orientation.N => state.setOrientation(Orientation.O)
-            case Orientation.S => state.setOrientation(Orientation.E)
-            case Orientation.E => state.setOrientation(Orientation.N)
-            case Orientation.O => state.setOrientation(Orientation.S)
-          }
-        }
-      }
-    }
-    state
+    helper(input.instructions, state)
   }
 
+  @tailrec
+  private def helper(instructions: List[Instruction], state: State): State = {
+    instructions match {
+      case Nil => state
+      case head :: tail =>
+        head match {
+          case Instruction.A =>
+            val (x, y) = state.position
+            val orientation = state.orientation
+            orientation match {
+              case Orientation.N => helper(tail, state.setPosition((x, y + 1)))
+              case Orientation.S => helper(tail, state.setPosition((x, y - 1)))
+              case Orientation.E => helper(tail, state.setPosition((x + 1, y)))
+              case Orientation.O => helper(tail, state.setPosition((x - 1, y)))
+            }
+          case Instruction.D =>
+            state.orientation match {
+              case Orientation.N => helper(tail, state.setOrientation(Orientation.E))
+              case Orientation.S => helper(tail, state.setOrientation(Orientation.O))
+              case Orientation.E => helper(tail, state.setOrientation(Orientation.S))
+              case Orientation.O => helper(tail, state.setOrientation(Orientation.N))
+            }
+          case Instruction.G =>
+            state.orientation match {
+              case Orientation.N => helper(tail, state.setOrientation(Orientation.O))
+              case Orientation.S => helper(tail, state.setOrientation(Orientation.E))
+              case Orientation.E => helper(tail, state.setOrientation(Orientation.N))
+              case Orientation.O => helper(tail, state.setOrientation(Orientation.S))
+            }
+        }
+    }
+  }
 }
