@@ -15,11 +15,11 @@ object OutputItemParser {
     override def marshall(input: String): Either[DonneesIncorrectesException, OutputItem] = ???
 
     override def unmarshall(input: OutputItem): String = {
-      s"""{
-         |   \"begin\": ${stateParser.unmarshall(input.begin)},
-         |   \"instructions\": ${input.instructions.map(instruction => "\"" + instruction + "\"").mkString("[", ",", "]")},
-         |   \"fin\": ${stateParser.unmarshall(input.end)}
-         |}""".stripMargin
+      s"""\t\t{
+         |\t\t\t\"debut\": ${stateParser.unmarshall(input.begin)},
+         |\t\t\t\"instructions\": ${input.instructions.map(instruction => "\"" + instruction + "\"").mkString("[", ",", "]")},
+         |\t\t\t\"fin\": ${stateParser.unmarshall(input.end)}
+         |\t\t}""".stripMargin
     }
   }
 
@@ -39,10 +39,10 @@ object OutputItemParser {
     override def marshall(input: String): Either[DonneesIncorrectesException, OutputItem] = ???
 
     override def unmarshall(input: OutputItem): String = {
-      s"""- begin:
+      s"""- debut:
          |${stateParser.unmarshall(input.begin)}
          |    instructions: \n${input.instructions.map(instruction => "      - " + instruction).mkString("\n")}
-         |    end:
+         |    fin:
          |${stateParser.unmarshall(input.end)}
          |""".stripMargin
     }

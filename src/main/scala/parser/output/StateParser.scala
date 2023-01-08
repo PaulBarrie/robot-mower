@@ -13,12 +13,12 @@ object StateParser {
 
     override def unmarshall(input: State): String = {
       s"""{
-         |\"point\": {
-         |    \"x\": ${input.position._1},
-         |    \"y\": ${input.position._2}
-         |   },
-         |   \"direction\": \"${input.orientation}\"
-         |}""".stripMargin
+         |\t\t\t\t\"point\": {
+         |\t\t\t\t\t\"x\": ${input.position._1},
+         |\t\t\t\t\t\"y\": ${input.position._2}
+         |\t\t\t\t},
+         |\t\t\t\t\"direction\": \"${input.orientation}\"
+         |\t\t\t}""".stripMargin
     }
   }
 

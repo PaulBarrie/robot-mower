@@ -17,11 +17,11 @@ object OutputParser {
     override def unmarshall(input: Output): String = {
       s"""{
          |\t\"limite\": {
-         |   \"x\": ${input.fieldSize._1},
-         |   \"y\": ${input.fieldSize._2}
+         |\t\t\"x\": ${input.fieldSize._1},
+         |\t\t\"y\": ${input.fieldSize._2}
          |\t},
          |\t\"tondeuses\": [
-         |   ${input.outputList.map(outputItemParser.unmarshall).mkString(",")}
+         |${input.outputList.map(outputItemParser.unmarshall).mkString(",\n")}
          |  ]
          |}""".stripMargin
     }
