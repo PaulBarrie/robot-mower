@@ -3,17 +3,7 @@ package io
 
 import java.io.PrintWriter
 
-case class File(final val path: String) extends io[File] {
-  private var content: String = ""
-
-  override def read(): File = {
-    val source = scala.io.Source.fromFile(path)
-    val content = source.mkString
-    source.close()
-    this.content = content
-    this
-  }
-
+case class File(final val path: String, final val content: String) extends io[File] {
   override def write(content: String): Unit = {
     new PrintWriter(path) {
       write(content); close()
