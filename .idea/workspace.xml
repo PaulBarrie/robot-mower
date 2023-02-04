@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6e54f223-fa5e-4e08-a637-fac508cceab2" name="Changes" comment="Exception handling">
+      <change beforePath="$PROJECT_DIR$/.bsp/sbt.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/build.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/plugins.sbt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/input.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/inputjson" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/.bsp/sbt.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Main.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/domain/Field.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/domain/Input.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/domain/Output.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/domain/State.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/domain/package.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/engine/ArrivalComputer.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/engine/EngineFactory.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/engine/FileEngine.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/engine/package.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/io/File.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/io/FileReader.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/io/package.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/kernel/error/DonneesIncorrectesException.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/parser/input/InputItemParser.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/parser/input/InputParser.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/parser/input/package.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/parser/output/OutputItemParser.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/parser/output/OutputParser.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/parser/output/StateParser.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/parser/output/package.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/parser/package.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/program/Program.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/.history3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/scala-2.12/scala_2.12-0.1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/scala-2.12/sync/copy-resource" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/scala-2.12/update/update_cache_2.12/inputs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/scala-2.12/update/update_cache_2.12/output" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/scala-2.12/zinc/inc_compile_2.12.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/_global/_global/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/_global/csrConfiguration/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/_global/csrProject/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/input_dsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.12/output_dsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/_global/ivyConfiguration/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/_global/ivySbt/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/_global/moduleSettings/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/_global/projectDescriptors/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/_global/scalaCompilerBridgeScope/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/_global/update/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/compile/_global/_global/compileOutputs/previous" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/compile/_global/_global/discoveredMainClasses/data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/compile/bspReporter/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/compile/compile/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/compile/compileIncremental/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/compile/compileIncremental/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/compile/copyResources/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/compile/dependencyClasspath/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/compile/exportedProductJars/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/compile/exportedProducts/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/compile/externalDependencyClasspath/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/compile/incOptions/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/compile/internalDependencyClasspath/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/compile/internalDependencyClasspath/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/compile/mainClass/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/compile/managedClasspath/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/compile/packageBin/_global/streams/inputs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/compile/packageBin/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/compile/packageBin/_global/streams/output" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/compile/scalacOptions/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/compile/unmanagedClasspath/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/compile/unmanagedClasspath/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/compile/unmanagedJars/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/runtime/dependencyClasspathAsJars/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/runtime/exportedProductJars/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/runtime/externalDependencyClasspath/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/runtime/fullClasspathAsJars/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/runtime/internalDependencyAsJars/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/runtime/internalDependencyAsJars/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/runtime/managedClasspath/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/runtime/unmanagedClasspath/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/runtime/unmanagedClasspath/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/target/streams/runtime/unmanagedJars/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/output.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/output.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/ArrivalComputerTest.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/FileEngineTest.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/FileTest.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/package.scala" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="gjgh74gx" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2JEOwnr8RFCNI08E8fwSUICL8m3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/ademr/Downloads/projet/projet/funprog-al",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="fr.esgi.mower.Main" />
+      <module name="robot-mower" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fr.esgi.mower.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScalaTests in 'scala'" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="robot-mower" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="All in package" />
+      <option name="classBuf">
+        <list>
+          <option value="fr.esgi.mower.FileTest" />
+          <option value="fr.esgi.mower.FileEngineTest" />
+          <option value="fr.esgi.mower.ArrivalComputerTest" />
+        </list>
+      </option>
+      <option name="testPackagePath" value="fr.esgi.mower" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="ScalaTest.ScalaTests in 'scala'" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e54f223-fa5e-4e08-a637-fac508cceab2" name="Changes" comment="" />
+      <created>1671640017421</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1671640017421</updated>
+      <workItem from="1671640019082" duration="1628000" />
+      <workItem from="1671887880755" duration="4149000" />
+      <workItem from="1671979170308" duration="113000" />
+      <workItem from="1671979384841" duration="4814000" />
+      <workItem from="1672051362775" duration="7000" />
+      <workItem from="1673190683890" duration="8042000" />
+      <workItem from="1673352231578" duration="10000" />
+      <workItem from="1674028828289" duration="38000" />
+      <workItem from="1674213509655" duration="5168000" />
+      <workItem from="1675261775284" duration="262000" />
+      <workItem from="1675262128370" duration="64000" />
+      <workItem from="1675533843083" duration="1406000" />
+    </task>
+    <task id="LOCAL-00001" summary="YAML Parsing">
+      <created>1671893114748</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671893114748</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Tests">
+      <created>1671984093498</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671984093498</updated>
+    </task>
+    <task id="LOCAL-00003" summary="JSON Parsing indent fix + Input parser enhanced">
+      <created>1673193915861</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673193915861</updated>
+    </task>
+    <task id="LOCAL-00004" summary="var fix">
+      <created>1673195142212</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673195142212</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Recursive computing">
+      <created>1673196216803</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1673196216803</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Exception handling">
+      <created>1673198109245</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673198109245</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="YAML Parsing" />
+    <MESSAGE value="Tests" />
+    <MESSAGE value="JSON Parsing indent fix + Input parser enhanced" />
+    <MESSAGE value="var fix" />
+    <MESSAGE value="Recursive computing" />
+    <MESSAGE value="Exception handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exception handling" />
+  </component>
+</project>
