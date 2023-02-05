@@ -8,10 +8,10 @@ import progfun.parser.Parser
 
 class InputItemParser extends Parser[List[String], InputItem] {
   override def marshall(input: List[String]): Either[DonneesIncorrectesException, InputItem] = {
-    input.length match {
-      case 2 => if (isValidPosition(input.head)) {
+    input match {
+      case head::_ => if (isValidPosition(head)) {
         try {
-          Right(InputItem(parsePosition(input.head), parseInstructions(input(1))))
+          Right(InputItem(parsePosition(head), parseInstructions(input(1))))
         } catch {
           case _: Exception => Left(DonneesIncorrectesException("Les instructions doivent être composées de caractères valides"))
         }
@@ -19,7 +19,7 @@ class InputItemParser extends Parser[List[String], InputItem] {
       else {
         Left(DonneesIncorrectesException("La position de la tondeuse doit être composée de 2 entiers et d'une orientation séparés par un espace"))
       }
-      case _ => Left(DonneesIncorrectesException("L'input item parser doit recevoir une liste de 2 string et non :" + input.length))
+      case _ => Left(DonneesIncorrectesException("L'input item parser doit recevoir une liste de 2 string et non :" + input.length.toString))
     }
   }
 

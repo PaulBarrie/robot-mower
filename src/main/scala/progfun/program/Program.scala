@@ -15,7 +15,7 @@ object Program {
     val outputFormat: String = "json"
 
     println("Mower on the way...");
-    val engine: FileEngine = engineFactory.get(FileType.withName(outputFormat.toUpperCase())).asInstanceOf[FileEngine];
+    val engine: FileEngine = engineFactory.get(FileType.withName(outputFormat.toUpperCase()))
     engine.run((inputPath, outputPath));
   }
 }

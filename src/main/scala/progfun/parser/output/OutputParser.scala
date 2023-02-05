@@ -16,8 +16,8 @@ object OutputParser {
     override def unmarshall(input: Output): String = {
       s"""{
          |\t\"limite\": {
-         |\t\t\"x\": ${input.fieldSize._1},
-         |\t\t\"y\": ${input.fieldSize._2}
+         |\t\t\"x\": ${input.fieldSize._1.toString},
+         |\t\t\"y\": ${input.fieldSize._2.toString}
          |\t},
          |\t\"tondeuses\": [
          |${input.outputList.map(outputItemParser.unmarshall).mkString(",\n")}
@@ -33,8 +33,8 @@ object OutputParser {
 
     override def unmarshall(input: Output): String = {
       s"""limite:
-         |  x: ${input.fieldSize._1}
-         |  y: ${input.fieldSize._2}
+         |  x: ${input.fieldSize._1.toString}
+         |  y: ${input.fieldSize._2.toString}
          |tondeuses:
          |  ${input.outputList.map(outputItemParser.unmarshall).mkString("  ")}
          |""".stripMargin

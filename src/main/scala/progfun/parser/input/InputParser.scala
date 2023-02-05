@@ -13,10 +13,10 @@ object InputParser {
       if (!isValidMapSize(input.head)) {
         Left(DonneesIncorrectesException("La position de la tondeuse doit être composée de 2 entiers séparés par un espace"))
       } else {
-        val inputItems = input.tail.grouped(2).toList
+        val inputItems = input.drop(1).grouped(2).toList
         val inputItemsParsed = inputItems.map(inputItemParser.marshall)
         inputItemsParsed.find(_.isLeft) match {
-          case Some(_) => Left(DonneesIncorrectesException(inputItemsParsed.find(_.isLeft).get.left.get.message))
+          case Some(_) => Left(DonneesIncorrectesException("Les données de la tondeuse sont incorrectes"))
           case None => Right(Input(
             parseMapSize(input.head),
             inputItemsParsed.map(_.right.get))

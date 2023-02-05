@@ -13,10 +13,10 @@ object StateParser {
     override def unmarshall(input: State): String = {
       s"""{
          |\t\t\t\t\"point\": {
-         |\t\t\t\t\t\"x\": ${input.position._1},
-         |\t\t\t\t\t\"y\": ${input.position._2}
+         |\t\t\t\t\t\"x\": ${input.position._1.toString},
+         |\t\t\t\t\t\"y\": ${input.position._2.toString}
          |\t\t\t\t},
-         |\t\t\t\t\"direction\": \"${input.orientation}\"
+         |\t\t\t\t\"direction\": \"${input.orientation.toString}\"
          |\t\t\t}""".stripMargin
     }
   }
@@ -26,9 +26,9 @@ object StateParser {
 
     override def unmarshall(input: State): String = {
       s"""      point:
-         |        x: ${input.position._1}
-         |        y: ${input.position._2}
-         |      direction: ${input.orientation}
+         |        x: ${input.position._1.toString}
+         |        y: ${input.position._2.toString}
+         |      direction: ${input.orientation.toString}
          |""".stripMargin
     }
   }
