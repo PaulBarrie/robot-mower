@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e54f223-fa5e-4e08-a637-fac508cceab2" name="Changes" comment="Strict compiler WIP">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="6e54f223-fa5e-4e08-a637-fac508cceab2" name="Changes" comment="Strict compiler still WIP">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/scala/ArrivalComputerTest.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/progfun/error/DonneesIncorrectesException.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/progfun/error/DonneesIncorrectesException.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/progfun/parser/input/InputItemParser.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/progfun/parser/input/InputItemParser.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/progfun/parser/input/InputParser.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/progfun/parser/input/InputParser.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/progfun/parser/output/OutputItemParser.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/progfun/parser/output/OutputItemParser.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/progfun/parser/output/OutputParser.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/progfun/parser/output/OutputParser.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/progfun/parser/output/StateParser.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/progfun/parser/output/StateParser.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/progfun/program/Program.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/progfun/program/Program.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/example/HelloSpec.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/example/StringSpec.scala" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +106,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ArrivalComputerTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="funprog-AL" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Class" />
+      <option name="testClassPath" value="ArrivalComputerTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScalaTests in 'scala' (1)" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="funprog-AL" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="All in package" />
+      <option name="classBuf">
+        <list>
+          <option value="FileTest" />
+          <option value="FileEngineTest" />
+          <option value="ArrivalComputerTest" />
+        </list>
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ScalaTests in 'scala'" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
       <module name="robot-mower" />
       <option name="allowRunningInParallel" value="false" />
@@ -130,6 +161,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.progfun.Main" />
+        <item itemvalue="ScalaTest.ScalaTests in 'scala' (1)" />
+        <item itemvalue="ScalaTest.ArrivalComputerTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="ScalaTest.ScalaTests in 'scala'" />
       </list>
@@ -156,7 +189,8 @@
       <workItem from="1675262128370" duration="64000" />
       <workItem from="1675533843083" duration="1406000" />
       <workItem from="1675536357653" duration="182000" />
-      <workItem from="1675608987365" duration="845000" />
+      <workItem from="1675608987365" duration="1154000" />
+      <workItem from="1675677953719" duration="3610000" />
     </task>
     <task id="LOCAL-00001" summary="YAML Parsing">
       <created>1671893114748</created>
@@ -207,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675536445377</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Strict compiler still WIP">
+      <created>1675610145110</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1675610145110</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +257,11 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="68f75fad-d891-468f-8a74-883652573a66">
+          <value>
+            <State />
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State>
@@ -224,7 +270,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="hard_compile" />
                       </list>
                     </value>
                   </entry>
@@ -233,6 +279,11 @@
             </State>
           </value>
         </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="68f75fad-d891-468f-8a74-883652573a66" value="TOOL_WINDOW" />
       </map>
     </option>
   </component>
@@ -244,6 +295,7 @@
     <MESSAGE value="Recursive computing" />
     <MESSAGE value="Exception handling" />
     <MESSAGE value="Strict compiler WIP" />
-    <option name="LAST_COMMIT_MESSAGE" value="Strict compiler WIP" />
+    <MESSAGE value="Strict compiler still WIP" />
+    <option name="LAST_COMMIT_MESSAGE" value="Strict compiler still WIP" />
   </component>
 </project>
