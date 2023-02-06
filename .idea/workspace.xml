@@ -4,14 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e54f223-fa5e-4e08-a637-fac508cceab2" name="Changes" comment="Strict compiler still WIP">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/scala/ArrivalComputerTest.scala" afterDir="false" />
+    <list default="true" id="6e54f223-fa5e-4e08-a637-fac508cceab2" name="Changes" comment="Strict compiler done">
+      <change beforePath="$PROJECT_DIR$/.idea/modules/funprog-AL-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/funprog-AL-build.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sbt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/progfun/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/progfun/Main.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/progfun/domain/Field.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/progfun/domain/Field.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/progfun/domain/Input.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/progfun/domain/Input.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/progfun/domain/Output.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/progfun/domain/Output.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/progfun/domain/State.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/progfun/domain/State.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/progfun/domain/package.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/progfun/domain/package.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/progfun/engine/ArrivalComputer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/progfun/engine/ArrivalComputer.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/progfun/engine/Computer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/progfun/engine/Computer.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/progfun/engine/Engine.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/progfun/engine/Engine.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/progfun/engine/EngineFactory.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/progfun/engine/EngineFactory.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/progfun/engine/FileEngine.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/progfun/engine/FileEngine.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/progfun/engine/package.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/progfun/engine/package.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/progfun/error/DonneesIncorrectesException.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/progfun/error/DonneesIncorrectesException.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/progfun/io/File.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/progfun/io/File.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/progfun/io/FileReader.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/progfun/io/FileReader.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/progfun/io/IO.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/progfun/io/IO.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/progfun/io/package.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/progfun/io/package.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/progfun/parser/Parser.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/progfun/parser/Parser.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/progfun/parser/input/InputItemParser.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/progfun/parser/input/InputItemParser.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/progfun/parser/input/InputParser.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/progfun/parser/input/InputParser.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/progfun/parser/input/package.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/progfun/parser/input/package.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/progfun/parser/output/OutputItemParser.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/progfun/parser/output/OutputItemParser.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/progfun/parser/output/OutputParser.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/progfun/parser/output/OutputParser.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/progfun/parser/output/StateParser.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/progfun/parser/output/StateParser.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/progfun/parser/output/package.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/progfun/parser/output/package.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/progfun/parser/package.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/progfun/parser/package.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/progfun/program/Program.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/progfun/program/Program.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/example/HelloSpec.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/example/StringSpec.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/output.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/output.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/output.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/output.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/ArrivalComputerTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/ArrivalComputerTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/FileEngineTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/FileEngineTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/scala/FileTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/FileTest.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +75,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="hard_compile" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -161,10 +190,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.progfun.Main" />
+        <item itemvalue="ScalaTest.ScalaTests in 'scala'" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="ScalaTest.ScalaTests in 'scala' (1)" />
         <item itemvalue="ScalaTest.ArrivalComputerTest" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="ScalaTest.ScalaTests in 'scala'" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +219,7 @@
       <workItem from="1675533843083" duration="1406000" />
       <workItem from="1675536357653" duration="182000" />
       <workItem from="1675608987365" duration="1154000" />
-      <workItem from="1675677953719" duration="3610000" />
+      <workItem from="1675677953719" duration="4506000" />
     </task>
     <task id="LOCAL-00001" summary="YAML Parsing">
       <created>1671893114748</created>
@@ -248,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675610145110</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Strict compiler done">
+      <created>1675682998942</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1675682998942</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,6 +332,7 @@
     <MESSAGE value="Exception handling" />
     <MESSAGE value="Strict compiler WIP" />
     <MESSAGE value="Strict compiler still WIP" />
-    <option name="LAST_COMMIT_MESSAGE" value="Strict compiler still WIP" />
+    <MESSAGE value="Strict compiler done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Strict compiler done" />
   </component>
 </project>

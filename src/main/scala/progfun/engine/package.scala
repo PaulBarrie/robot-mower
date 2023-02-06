@@ -1,5 +1,3 @@
 package progfun
 
-package object engine {
-
-}
+package object engine {}

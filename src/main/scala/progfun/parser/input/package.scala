@@ -1,5 +1,3 @@
 package progfun.parser
 
-package object input {
-
-}
+package object input {}

@@ -29,17 +29,25 @@ case class ArrivalComputer() extends Computer[InputItem, State] {
             }
           case Instruction.D =>
             state.orientation match {
-              case Orientation.N => helper(tail, state.setOrientation(Orientation.E))
-              case Orientation.S => helper(tail, state.setOrientation(Orientation.O))
-              case Orientation.E => helper(tail, state.setOrientation(Orientation.S))
-              case Orientation.O => helper(tail, state.setOrientation(Orientation.N))
+              case Orientation.N =>
+                helper(tail, state.setOrientation(Orientation.E))
+              case Orientation.S =>
+                helper(tail, state.setOrientation(Orientation.O))
+              case Orientation.E =>
+                helper(tail, state.setOrientation(Orientation.S))
+              case Orientation.O =>
+                helper(tail, state.setOrientation(Orientation.N))
             }
           case Instruction.G =>
             state.orientation match {
-              case Orientation.N => helper(tail, state.setOrientation(Orientation.O))
-              case Orientation.S => helper(tail, state.setOrientation(Orientation.E))
-              case Orientation.E => helper(tail, state.setOrientation(Orientation.N))
-              case Orientation.O => helper(tail, state.setOrientation(Orientation.S))
+              case Orientation.N =>
+                helper(tail, state.setOrientation(Orientation.O))
+              case Orientation.S =>
+                helper(tail, state.setOrientation(Orientation.E))
+              case Orientation.E =>
+                helper(tail, state.setOrientation(Orientation.N))
+              case Orientation.O =>
+                helper(tail, state.setOrientation(Orientation.S))
             }
         }
     }

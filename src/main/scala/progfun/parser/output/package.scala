@@ -1,4 +1,3 @@
 package progfun.parser
 
-package object output {
-}
+package object output {}

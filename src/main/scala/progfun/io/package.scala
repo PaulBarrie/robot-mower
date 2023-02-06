@@ -1,4 +1,3 @@
 package progfun
 
-package object io {
-}
+package object io {}

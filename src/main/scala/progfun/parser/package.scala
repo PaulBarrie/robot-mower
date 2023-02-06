@@ -1,5 +1,3 @@
 package progfun
 
-package object parser {
-
-}
+package object parser {}

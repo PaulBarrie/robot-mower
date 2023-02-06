@@ -8,7 +8,9 @@ abstract class StateParser extends Parser[String, State] {}
 
 object StateParser {
   case class JSONStateParser() extends StateParser {
-    override def marshall(input: String): Either[DonneesIncorrectesException, State] = ???
+    override def marshall(
+        input: String
+    ): Either[DonneesIncorrectesException, State] = ???
 
     override def unmarshall(input: State): String = {
       s"""{
@@ -22,7 +24,9 @@ object StateParser {
   }
 
   case class YAMLStateParser() extends StateParser {
-    override def marshall(input: String): Either[DonneesIncorrectesException, State] = ???
+    override def marshall(
+        input: String
+    ): Either[DonneesIncorrectesException, State] = ???
 
     override def unmarshall(input: State): String = {
       s"""      point:
@@ -33,4 +37,3 @@ object StateParser {
     }
   }
 }
-
