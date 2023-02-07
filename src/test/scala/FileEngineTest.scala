@@ -2,7 +2,7 @@ import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should
 import progfun.engine.FileEngine
 import progfun.io.{File, FileReader}
-import progfun.parser.output.OutputParser.{JSONOutputParser, YAMLOutputParser}
+import progfun.parser.output.OutputParser.{CSVOutputParser, JSONOutputParser, YAMLOutputParser}
 
 class FileEngineTest extends AnyFlatSpec with should.Matchers {
   "FileEngine" should "read input file and produce JSON output file" in {
@@ -25,4 +25,15 @@ class FileEngineTest extends AnyFlatSpec with should.Matchers {
     output should be(expected)
   }
 
+  "FileEngine" should "read input file and produce CSV output file" in {
+    FileEngine(CSVOutputParser())
+      .run(("src/test/resources/input.txt", "src/test/resources/output.csv"))
+    val fileReader = FileReader("src/test/resources/output.csv")
+    val output = File(fileReader.path, fileReader.read()).toList().mkString
+    val expected =
+      "numéro;début_x;début_y;début_direction;fin_x;fin_y;fin_direction;instructions" +
+        "1;1;2;N;1;3;N;GAGAGAGAA" +
+        "2;3;3;E;5;1;E;AADAADADDA"
+    output should be(expected)
+  }
 }

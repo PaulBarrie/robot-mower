@@ -1,5 +1,6 @@
 package progfun.parser.output
 
+import progfun.domain.Instruction.Instruction
 import progfun.domain.Output.OutputItem
 import progfun.error.DonneesIncorrectesException
 import progfun.parser.Parser
@@ -15,13 +16,13 @@ object OutputItemParser {
         input: String
     ): Either[DonneesIncorrectesException, OutputItem] = ???
 
-    override def unmarshall(input: OutputItem): String = {
+    override def unmarshall(output: OutputItem): String = {
       s"""\t\t{
-         |\t\t\t\"debut\": ${stateParser.unmarshall(input.begin)},
-         |\t\t\t\"instructions\": ${input.instructions
+         |\t\t\t\"debut\": ${stateParser.unmarshall(output.begin)},
+         |\t\t\t\"instructions\": ${output.instructions
            .map(instruction => "\"" + instruction.toString + "\"")
            .mkString("[", ",", "]")},
-         |\t\t\t\"fin\": ${stateParser.unmarshall(input.end)}
+         |\t\t\t\"fin\": ${stateParser.unmarshall(output.end)}
          |\t\t}""".stripMargin
     }
   }
@@ -29,12 +30,18 @@ object OutputItemParser {
   case class CSVOutputItemParser() extends Parser[String, OutputItem] {
     final private val csvSeparator = ";"
 
+    private def mapInstructionsToCSV(
+        instructions: List[Instruction]
+    ): String = {
+      instructions.map(instruction => instruction.toString).mkString
+    }
+
     override def marshall(
         input: String
     ): Either[DonneesIncorrectesException, OutputItem] = ???
 
-    override def unmarshall(input: OutputItem): String = {
-      s"${input.begin.position._1.toString}${csvSeparator}${input.begin.position._2.toString}${csvSeparator}${input.begin.orientation.toString}${csvSeparator}${input.end.position._1.toString}${csvSeparator}${input.end.position._2.toString}${csvSeparator}${input.end.orientation.toString}"
+    override def unmarshall(output: OutputItem): String = {
+      s"${output.begin.position._1.toString}$csvSeparator${output.begin.position._2.toString}$csvSeparator${output.begin.orientation.toString}$csvSeparator${output.end.position._1.toString}$csvSeparator${output.end.position._2.toString}$csvSeparator${output.end.orientation.toString}$csvSeparator${mapInstructionsToCSV(output.instructions)}"
     }
   }
 
@@ -45,14 +52,14 @@ object OutputItemParser {
         input: String
     ): Either[DonneesIncorrectesException, OutputItem] = ???
 
-    override def unmarshall(input: OutputItem): String = {
+    override def unmarshall(output: OutputItem): String = {
       s"""- debut:
-         |${stateParser.unmarshall(input.begin)}
-         |    instructions: \n${input.instructions
+         |${stateParser.unmarshall(output.begin)}
+         |    instructions: \n${output.instructions
            .map(instruction => "      - " + instruction.toString)
            .mkString("\n")}
          |    fin:
-         |${stateParser.unmarshall(input.end)}
+         |${stateParser.unmarshall(output.end)}
          |""".stripMargin
     }
   }

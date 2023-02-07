@@ -14,10 +14,10 @@ case class FileEngine(outputParser: Parser[String, Output])
     ArrivalComputer();
 
   override def run(inputOutputPath: (String, String)): Unit = {
-    val fileReader1 = FileReader(inputOutputPath._1)
-    val fileReader2 = FileReader(inputOutputPath._2)
+    val inputFileReader = FileReader(inputOutputPath._1)
+    val outputFileReader = FileReader(inputOutputPath._2)
     val textInput: List[String] =
-      File(fileReader1.path, fileReader1.read()).toList();
+      File(inputFileReader.path, inputFileReader.read()).toList();
     inputParser.marshall(textInput) match {
       case Left(e) => println(e.message)
       case Right(input) =>
@@ -33,8 +33,8 @@ case class FileEngine(outputParser: Parser[String, Output])
           )
         );
         val outputString: String = outputParser.unmarshall(output);
-        File(fileReader2.path, "").write(outputString);
-        println("The output file is available at: " + fileReader2.path)
+        File(outputFileReader.path, "").write(outputString);
+        println("The output file is available at: " + outputFileReader.path)
     }
   }
 

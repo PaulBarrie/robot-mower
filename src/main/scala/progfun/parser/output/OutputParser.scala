@@ -58,7 +58,12 @@ object OutputParser {
 
     override def unmarshall(input: Output): String = {
       s"numéro;début_x;début_y;début_direction;fin_x;fin_y;fin_direction;instructions\n" + input.outputList
-        .map(outputItemParser.unmarshall)
+        .map(
+          output =>
+            (input.outputList
+              .indexOf(output) + 1).toString + ";" + outputItemParser
+              .unmarshall(output)
+        )
         .mkString("\n")
     }
   }
